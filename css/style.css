@@ -25,6 +25,10 @@ body a {
 body h1, h2, h3, h4, p {
     margin-bottom: 0; 
 }
+body input:focus {
+    box-shadow: none;
+    outline: 0;
+}
 
 
 .color-principal {color: var(--color_principal);}
@@ -32,6 +36,8 @@ body h1, h2, h3, h4, p {
 .color-terciario{ color: var(--color_terciario);}
 .bg-principal {background-color: var(--color_principal);}
 .bg-secundario {background-color: var(--color_secundario);}
+.bg-terciario {background-color: var(--color_terciario);}
+.bg-copy { background-color: #0b1535}
 .bg-gris {background-color: var(--fondo_gris_claro);}
 .color-text {color: var(--color_text);}
 .color-star {color: var(--color_star);}
@@ -105,4 +111,60 @@ body h1, h2, h3, h4, p {
 /* ------------------BLOG----------------------- */
 .img-blog {
     border-bottom: 4px solid var(--color_principal);
+}
+
+
+/* -------------------PROCESS----------------- */
+.img-process {
+    border: 1px dashed var(--color_text);
+}
+
+/* ------------------CONTACT-------------------- */
+.contact {
+    background-image: url(../img/map-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.content-contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+.form-contact .item-form textarea,
+.form-contact .item-form input[type="email"],
+.form-contact .item-form input[type="text"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--color_text);
+    background-color: transparent;
+    padding: 5px 0px;
+}
+.form-contact .item-form textarea::placeholder,
+.form-contact .item-form input[type="email"]::placeholder,
+.form-contact .item-form input[type="text"]::placeholder {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color_text);
+}
+
+/* ----------------FOOTER--------------- */
+.footer {
+    background-image: url(../img/footer-bg-images.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.link-social {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--color_principal);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color_principal);
+    border-radius: 15px;
+}
+.left-footer {
+    border-right: 1px dashed var(--color_principal);
 }
