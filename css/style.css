@@ -38,10 +38,12 @@ body input:focus {
 .bg-secundario {background-color: var(--color_secundario);}
 .bg-terciario {background-color: var(--color_terciario);}
 .bg-copy { background-color: #0b1535}
+.bg-trans {background-color: #0000009a;}
 .bg-gris {background-color: var(--fondo_gris_claro);}
 .color-text {color: var(--color_text);}
 .color-star {color: var(--color_star);}
 .bg-claro {background-color: var(--color_box_claro);}
+.border-3-secundario {border: 3px solid var(--color_secundario);}
 
 
 
@@ -79,6 +81,9 @@ body input:focus {
 .cover {
     z-index: 3;
 }
+.cover-contacto {
+    margin-top: 110px;
+}
 .back-cover-home {
     width: 100%;
     background-image: url(../img/banner-01.jpg);
@@ -86,6 +91,46 @@ body input:focus {
     background-size: cover;
     min-height: 100vh;
 }
+.back-cover-sst {
+    width: 100%;
+    background-image: url(../img/banner-sst.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.back-cover-medlab {
+    width: 100%;
+    background-image: url(../img/med-laboral.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.back-cover-legal {
+    width: 100%;
+    background-image: url(../img/legal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.back-cover-citas {
+    width: 100%;
+    background-image: url(../img/viviana-metd.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.abs-cover-citas {
+    background-color: #ffffffcc;
+}
+.back-cover-contacto {
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/contact-banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
 
 /* ------------------HORARY-------------------- */
 .horary {
@@ -167,4 +212,50 @@ body input:focus {
 }
 .left-footer {
     border-right: 1px dashed var(--color_principal);
+}
+
+
+/* ------------------VID------------------ */
+.back_video {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+/* ------------------PROGRAM------------------ */
+.program {
+    margin-top: 500px;
+}
+
+/* -------------------ROW-ASE-------------------- */
+.row-ase {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+}
+
+/* ------------------ROW-GRID----------------- */
+.box-item {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* ------------------ROW-LEGAL----------------- */
+.row-legal {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.video-legal {
+    border-radius: 15px 0px 0px 15px;
+}
+.item-list {
+    padding: 5px 0px;
+    border-bottom: 1px dashed var(--color_secundario);
+    width: 100%;
+}
+.item-list:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* ---------------------IFRAMES----------------- */
+.item-iframe {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
