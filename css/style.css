@@ -6,7 +6,8 @@
     --color_terciario: #0D1A42;
     --color_black: #000;
     --color_white: #fff;
-    --color_texto: #797C7F;
+    --color_text: #797C7F;
+    --fondo_gris_claro: #f5f5f5;
 }
 
 * {
@@ -22,5 +23,81 @@ body a {
     text-decoration: none;
 }
 body h1, h2, h3, h4, p {
-    margin-bottom: 0;
+    margin-bottom: 0; 
+}
+
+
+.color-principal {color: var(--color_principal);}
+.color-secundario {color: var(--color_secundario);}
+.color-terciario{ color: var(--color_terciario);}
+.bg-principal {background-color: var(--color_principal);}
+.bg-secundario {background-color: var(--color_secundario);}
+.bg-gris {background-color: var(--fondo_gris_claro);}
+.color-text {color: var(--color_text);}
+.color-star {color: var(--color_star);}
+.bg-claro {background-color: var(--color_box_claro);}
+
+
+
+/* -------------------HEADER------------------- */
+.header {
+    background-color: var(--color_white);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.logo-header {
+    margin-bottom: -70px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+/* -----------------VARIABLE--------------------- */
+.stand {
+    font-size: 14px;
+    font-weight: 900;
+    color: var(--color_principal);
+    letter-spacing: 5px;
+}
+
+.btn-metd {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 40px;
+    border-radius: 15px;
+}
+
+
+/* ------------------COVER----------------------- */
+.cover {
+    z-index: 3;
+}
+.back-cover-home {
+    width: 100%;
+    background-image: url(../img/banner-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* ------------------HORARY-------------------- */
+.horary {
+    margin-top: -75px;
+    position: absolute;
+}
+.content-horary {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+/* -----------------CARDS---------------------- */
+.card-health-box {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.row-cards-2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2.1fr;
+    gap: 30px;
 }
