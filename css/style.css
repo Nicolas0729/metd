@@ -25,6 +25,7 @@ body a {
 body h1, h2, h3, h4, p {
     margin-bottom: 0; 
 }
+body textarea:focus,
 body input:focus {
     box-shadow: none;
     outline: 0;
@@ -59,7 +60,20 @@ body input:focus {
     margin-bottom: -70px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
+.canvas-menu i {
+    cursor: pointer;
+}
+.canvas-menu i:hover {
+    background-color: var(--color_principal);
+    color: var(--color_white);
+}
+.link-nav {
+    transition: 0.2s;
+}
+.link-nav:hover {
+    color: var(--color_terciario);
+    padding-bottom: 5px;
+}
 
 /* -----------------VARIABLE--------------------- */
 .stand {
@@ -122,6 +136,10 @@ body input:focus {
 .abs-cover-citas {
     background-color: #ffffffcc;
 }
+.btn-agend:hover {
+    background-color: var(--color_principal);
+    border: 2px solid var(--color_principal);
+}
 .back-cover-contacto {
     width: 100%;
     height: 400px;
@@ -129,6 +147,22 @@ body input:focus {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
+}
+.back-cover-blog {
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/blog-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.abs-cover-blog {
+    background-color: #ffffff9c;
+}
+.btn-cover:hover {
+    background-color: var(--color_principal);
+    color: var(--color_white);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 
 
@@ -141,6 +175,11 @@ body input:focus {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+/* ----------------IF----------------- */
+.btn-cite:hover {
+    background-color: var(--color_principal);
+    color: var(--color_white);
+}
 
 /* -----------------CARDS---------------------- */
 .card-health-box {
@@ -152,12 +191,31 @@ body input:focus {
     grid-template-columns: 1fr 1fr 2.1fr;
     gap: 30px;
 }
-
+.link-read:hover {
+    color: var(--color_secundario);
+}
+.link-read:hover i {
+    margin-left: 20px;
+    color: var(--color_secundario);
+}
+.btn-agend:hover {
+    background-color: var(--color_principal);
+    color: var(--color_white);
+}
 /* ------------------BLOG----------------------- */
 .img-blog {
     border-bottom: 4px solid var(--color_principal);
 }
-
+.link-note:hover {
+    color: var(--color_secundario);
+}
+.link-note:hover i {
+    margin-left: 20px;
+    color: var(--color_secundario);
+}
+.card-blog:hover .img-blog .img-back {
+    transform: scale(1.1);
+}
 
 /* -------------------PROCESS----------------- */
 .img-process {
@@ -165,12 +223,10 @@ body input:focus {
 }
 
 /* ------------------CONTACT-------------------- */
-.contact {
-    background-image: url(../img/map-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+.item-msg {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
+
 .content-contact {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -181,7 +237,7 @@ body input:focus {
 .form-contact .item-form input[type="text"] {
     width: 100%;
     border: none;
-    border-bottom: 1px solid var(--color_text);
+    border-bottom: 1px solid #9d9d9d;
     background-color: transparent;
     padding: 5px 0px;
 }
@@ -191,6 +247,10 @@ body input:focus {
     font-size: 15px;
     font-weight: 700;
     color: var(--color_text);
+}
+.btn-submit:hover {
+    background-color: var(--color_principal);
+    color: var(--color_white);
 }
 
 /* ----------------FOOTER--------------- */
@@ -209,6 +269,11 @@ body input:focus {
     align-items: center;
     color: var(--color_principal);
     border-radius: 15px;
+    transition: 0.5s;
+}
+.link-social:hover {
+    color: var(--color_white);
+    border: 2px solid var(--color_white);
 }
 .left-footer {
     border-right: 1px dashed var(--color_principal);
@@ -231,6 +296,10 @@ body input:focus {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 50px;
+}
+.btn-ase:hover {
+    background-color: var(--color_terciario);
+    color: var(--color_white);
 }
 
 /* ------------------ROW-GRID----------------- */
