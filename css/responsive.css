@@ -49,6 +49,15 @@
         padding: 30px;
         margin-bottom: 50px;
     }
+    .back-cover-home {
+        background-position: right;
+    }
+    .abs-home {
+        background-color: #ffffffb9;
+    }
+    .back-cover-sst {
+        background-position: center;
+    }
     .title-box {
         font-size: 20px;
     }
