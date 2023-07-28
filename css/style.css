@@ -19,6 +19,9 @@
 body {
     font-family: 'Raleway', sans-serif;
 }
+body ul {
+    padding-left: 0;
+}
 body a {
     text-decoration: none;
 }
@@ -46,7 +49,31 @@ body input:focus {
 .bg-claro {background-color: var(--color_box_claro);}
 .border-3-secundario {border: 3px solid var(--color_secundario);}
 
-
+/* -------Head-global------- */
+.head-global {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.head-global .subtitle-global {
+    font-size: 14px;
+    font-weight: 900;
+    color: var(--color_principal);
+    letter-spacing: 5px;
+}
+.head-global .title-global {
+    font-size: 45px;
+    font-weight: 800;
+    color: var(--color_terciario);
+}
+.head-global p {
+    font-size: 15px;
+    color: var(--color_black);
+}
 
 /* -------------------HEADER------------------- */
 .header {
@@ -328,3 +355,217 @@ body input:focus {
 .item-iframe {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.if {
+    width: 100%;
+}
+.if-grey {
+    background-color: var(--fondo_gris_claro);
+}
+.if .content-if {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    padding: 70px 0px;
+}
+/* ----Carousel-test----- */
+.content-if .carousel-test {
+    width: 100%;
+}
+.carousel-test .card-test {
+    width: 100%;
+    background-color: var(--colorWhite);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}   
+    .card-test .cuality {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    .card-test .cuality i {
+        font-size: 15px;
+        color: #ffd900;
+    }
+    .card-test p {
+        font-size: 15px;
+        color: var(--colorTexto);
+    }
+    .card-test .author-test {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .card-test .author-test img {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .card-test .author-test .name-author {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--colorBlack);
+    }
+    .card-test .author-test .name-author .carge-us {
+        font-size: 15px;
+        font-weight: 400;
+        color: var(--colorTexto);
+    }
+    .carousel-test .owl-dots {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .carousel-test .owl-dot {
+        height: 15px;
+        width: 15px;
+        cursor: pointer;
+        outline: none;
+        margin: 0 10px;
+        background-color: var(--color_text)!important;
+        border-radius: 50px;
+        transition: 0.3s;
+    }
+    .carousel-test .owl-dot.active {
+        height: 15px;
+        width: 30px;
+        background-color: var(--color_secundario)!important;
+    }
+
+/* ----Row-plans--- */
+.content-if .row-plans {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.row-plans .plan {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 46px 39px 59px 57px;
+    background-color: var(--color_white);   
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.row-plans .plan:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+    .plan .title-plan {
+        width: 125px;
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--color_white);
+        background-color: var(--color_principal);
+        padding: 10px;
+        border-radius: 13px;
+        margin-top: -64px;
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+    }
+    .plan .mid-plan {
+        height: 230px;
+        margin-bottom: 20px;
+    }
+    .plan .mid-plan .icon-plan {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .plan .mid-plan .icon-plan img {
+        width: 155px;
+    }
+    .plan .mid-plan .pricing-plan {
+        font-size: 52px;
+        font-weight: 700;
+        color: var(--color_terciario);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .plan .mid-plan p {
+        font-size: 15px;
+        color: var(--color_text);
+    }
+    .plan .mid-plan .pricing-plan .month {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        color: var(--colorTexto);
+    }
+    .plan .list-plans {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+    .plan .list-plans .item-plan {
+        display: flex;
+        gap: 10px;
+        text-align: left;
+        padding-bottom: 10px;
+        border-bottom: 1px dashed #d4d4d4;
+    }
+    .plan .list-plans .item-plan:last-child {
+        border-bottom: 0px;
+    }
+    .plan .list-plans .item-plan i {
+        font-size: 20px;
+        color: var(--color_secundario);
+    }
+    .plan .list-plans .item-plan .p-pl {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+        color: var(--colorTexto);
+    }
+    .plan .bot-plan {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+    }
+    .plan .bot-plan .btn-plan {
+        font-size: 20px;
+        line-height: 20px;
+        padding: 15px 35px;
+        border-radius: 15px;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+        border: 2px solid var(--color_principal);
+        color: var(--color_terciario);
+    }
+    .plan .bot-plan .btn-plan:hover {
+        background-color: var(--color_principal);
+        color: var(--color_white);
+    }
+    .plan .img-plan {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .plan .img-ben {
+        margin-bottom: 30px;
+    }
+    .plan .img-ben img {
+        width: 153px;
+    }
+    .plan .title-ben {
+        font-size: 23px;
+        font-weight: 600;
+        color: var(--colorWhite);
+    }
+    .plan .p-ben {
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--colorTexto);
+    }
