@@ -7,6 +7,9 @@
     .menu-header {
         display: none;
     }
+    .bot-header {
+        display: none;
+    }
     .logo-header {
         width: 70px;
         height: 70px;
@@ -110,10 +113,13 @@
     }
     .abs-contacto {
         width: 100%;
-        min-height: 400px;
+        min-height: auto;
         display: flex;
         justify-content: center;
         background-color: #ffffffc2;
+    }
+    .back-cover-blog {
+        min-height: auto;
     }
     .content-cont {
         height: 100%;
@@ -157,6 +163,28 @@
     }
     .paragraph-if {
         font-size: 15px;
+    }
+
+    /* -----Head-global---- */
+    .head-global {
+        padding: 0px 20px;
+    }
+    .head-global .title-global {
+        font-size: 25px;
+    }
+
+    /* ------if-------- */
+    .if .content-if {
+        padding: 50px 20px;
+    }
+    .if .content-if-bot {
+        padding-bottom: 0;
+    }
+
+    /* ------Row-plans------ */
+    .content-if .row-plans {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     /* ---------------CARDS-METD----------------- */
